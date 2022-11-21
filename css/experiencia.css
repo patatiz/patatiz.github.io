@@ -1,0 +1,128 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+}
+
+.experiencia .subtitulo {
+  color: #d6d6d6;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 35ch;
+  margin-bottom: 60px;
+  color: #474747;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background: #f8fff8;
+  border: 1px solid #dbf1dc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  gap: 10px 20px;
+}
+
+.empresa::before {
+  content: url(/img/decorações/deco1.svg);
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: -5px;
+}
+
+.empresa-ano {
+  position: absolute;
+  color: #474747;
+  top: 17.5px;
+  left: -100px;
+  width: 80px;
+  text-align: right;
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #474747;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit);
+  gap: 10px;
+  align-content: flex-start;
+}
+.empresa-habilidades li {
+  color: #033205;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding: 5px 10px;
+  background-color: #b8fbbb;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .experiencia .subtitulo {
+    font-size: 4rem;
+    color: #141414;
+  }
+  
+  .experiencia-texto{
+    max-width: none;
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano{
+    left: 20px;
+    top: -22px;
+    text-align: left;
+    }
+
+    .empresa{
+      margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+  .experiencia {
+    justify-items: start;
+    gap: 30px;
+  }
+  .experiencia .subtitulo {
+    font-size: 3rem;
+  }
+
+  .experiencia-texto{
+    font-size: 1rem;
+    line-height:normal;
+    max-width: none;
+    margin-bottom: 30px;
+    color: #474747;
+  }
+}
+
+@media (max-width:400px){
+  .empresa{
+    grid-template-columns: 1fr;
+  }
+}

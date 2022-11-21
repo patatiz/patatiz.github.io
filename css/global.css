@@ -1,0 +1,45 @@
+body {
+  font-family: kanit, arial, sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100% ;
+  height: auto;
+  object-fit: cover;
+}
+
+body strong{
+  color: #2DC634;
+  font-weight: 500;
+}
+
+.subtitulo{
+  font-size: 7rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 4ch;
+}
+
+@media(max-width:800px){
+  .subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
