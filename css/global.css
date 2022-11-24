@@ -18,17 +18,17 @@ ul {
 }
 
 img {
-  max-width: 100% ;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-body strong{
-  color: #2DC634;
+body strong {
+  color: #2dc634;
   font-weight: 500;
 }
 
-.subtitulo{
+.subtitulo {
   font-size: 7rem;
   line-height: 1;
   word-break: break-all;
@@ -36,8 +36,21 @@ body strong{
   max-width: 4ch;
 }
 
-@media(max-width:800px){
-  .subtitulo{
+.aviso {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #b8fbba9e;
+}
+
+.aviso p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial !important;
